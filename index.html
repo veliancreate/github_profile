@@ -19,14 +19,14 @@
       </form>
       <ul class="list-group" ng-repeat="user in searchResult.items">
         <li>
-          <img ng-src="{{user.avatar_url}}&s=50">
+          <img ng-src="{{user.avatar_url}}" height="75" width="75">
           <a ng-href="{{user.html_url}}">{{user.login}}</a>
         </li>
         <li>
-          {{ individualData.followers }}
+          {{ user.followers }}
         </li>
         <li>
-          {{ individualData.public_repos }}  
+          {{ user.public_repos }} 
         </li>
       </ul>
     </div>
